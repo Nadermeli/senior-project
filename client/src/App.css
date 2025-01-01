@@ -1,0 +1,68 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+* {
+  color: black;
+
+  margin: 0;
+  padding: 0;
+}
+
+.bg-primary {
+  @apply bg-green-500;
+}
+.text-grey {
+  @apply text-slate-700;
+}
+
+.text-primary {
+  @apply text-green-500;
+}
+
+.button-gray {
+  @apply self-center mt-2 border p-2 rounded-md bg-gray-200 font-semibold hover:bg-opacity-80;
+}
+.search-btn {
+  @apply border rounded-md p-2 flex gap-2 items-center h-12 border-gray-300;
+}
+
+.button-primary {
+  @apply bg-green-500 hover:opacity-90  font-bold text-sm md:text-base rounded-md p-3 md:min-w-24 disabled:bg-gray-400 disabled:hover:opacity-100;
+}
+.button-danger {
+  @apply bg-red-700 text-white hover:opacity-90  font-bold text-sm md:text-base rounded-md p-3 md:min-w-24 disabled:bg-gray-400 disabled:hover:opacity-100;
+}
+.dropwdown {
+  @apply hover:opacity-90  text-sm md:text-base rounded-md p-2 px-5;
+}
+
+.nav-button {
+  @apply hover:text-green-500 transition-all duration-200;
+}
+
+.blur-effect {
+  @apply backdrop-filter backdrop-blur-md bg-slate-200 bg-opacity-30;
+}
+
+.header-style {
+  @apply font-semibold text-xl;
+}
+
+.input-style {
+  @apply p-2  rounded-md bg-slate-200 focus:outline-green-500 focus:ring-0 border-none;
+}
+
+.text-gray {
+  @apply text-gray-400;
+}
+
+.section-style {
+  @apply min-h-[90vh] p-5 flex flex-col gap-5;
+}
+
+.gray-border {
+  @apply border-gray-300;
+}
